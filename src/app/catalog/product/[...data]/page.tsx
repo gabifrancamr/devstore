@@ -1,4 +1,5 @@
 import { Button } from '@/components/button'
+import Test from '@/components/test'
 
 interface ProductProps {
   params: {
@@ -17,7 +18,9 @@ export default async function Product({ params }: ProductProps) {
       <p>Size: {size}</p>
       <p>Color: {color}</p>
 
-      <Button />
+      <Button>
+        <Test />
+      </Button>
     </div>
   )
 }
