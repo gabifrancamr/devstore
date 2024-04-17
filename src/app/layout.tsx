@@ -14,11 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
-      <body className={inter.variable}>
-        <div>Cabeçalho</div>
-        {children}
-      </body>
+    <html lang="pt-br" className={inter.variable}>
+      <body>{children}</body>
     </html>
   )
 }
